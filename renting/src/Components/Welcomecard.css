@@ -1,0 +1,53 @@
+/* Card styling */
+.welcome-card {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* #f4f4f4 */
+  /* Heading styling */
+  h3 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  /* Container for text and image */
+  .wel-text-container {
+    display: flex;
+    flex-direction: row; /* Display text and image horizontally */
+    align-items: center; /* Align text and image in the center vertically */
+    justify-content: center; /* Center content horizontally */
+    width: 100%;
+  }
+  
+  /* Text styling */
+  .text-container p {
+    margin: 5px 15px; /* Add some space between the text and the image */
+    color: #555;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Image container */
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Image styling */
+  img {
+    border-radius: 15px; /* Add rounded corners to image */
+    object-fit: cover;  /* Ensure the image maintains its aspect ratio */
+  }
+  

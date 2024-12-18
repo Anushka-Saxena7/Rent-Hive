@@ -1,0 +1,102 @@
+/* Main section styling */
+.card-post-main {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsive layout */
+    justify-content: center; /* Center cards in the container */
+    align-items: flex-start; /* Align cards to the top */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Card container */
+  .card-post-container {
+    width: calc(25% - 40px); /* 25% width for 4 cards in one line, accounting for gaps */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Card body - Horizontal layout */
+  .card-post-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  /* Image styling */
+  .image-post {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Right content (title, price, button) */
+  .content-post {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+  }
+  
+  .title-post {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .price {
+    font-size: 1rem;
+    color: #007BFF;
+  }
+  
+  .clickme {
+    padding: 8px 12px;
+    background-color: #0c6621;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .clickme:hover {
+    background-color: #218838;
+  }
+  
+  /* Below content: description and location */
+  .details-post {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .description {
+    flex: 1;
+  }
+  
+  .loc {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    .card-post-container {
+      width: calc(50% - 40px); /* 2 cards per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-post-container {
+      width: calc(100% - 40px); /* 1 card per row on very small screens */
+    }
+  }
+  

@@ -1,0 +1,65 @@
+/* Main section container */
+.main {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap to the next line */
+  justify-content: space-between; /* Adds spacing between cards */
+  gap: 20px; /* Space between rows and columns */
+  padding: 20px;
+  max-width: 1200px; /* Limit container width */
+  margin: 0 auto; /* Center the container */
+  box-sizing: border-box;
+}
+
+/* Link styling */
+.card-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the text color */
+  display: flex; /* Allow flexbox behavior */
+  flex: 1 1 calc(25% - 20px); /* Set card size with space */
+  max-width: calc(25% - 20px); /* Prevent exceeding width */
+  box-sizing: border-box;
+}
+
+/* Individual card container */
+.card-container {
+  width: 100%; /* Ensure it takes full width of the link */
+  margin: 20px;
+  border-radius: 11px;
+  text-align: center;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Card body styling */
+.card-body {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 11px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(0, 0, 0, 0.2);
+  height: 180px; /* Fixed height for cards */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-body:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Card image styling */
+.card-image {
+  width: 190px;           /* Makes image take full width of the card */
+  height: 160px;          /* Set a fixed height */
+  object-fit: cover;      /* Ensures image scales nicely without distortion */
+  border-radius: 11px; 
+  transition: transform 0.3s ease-in-out;
+}
